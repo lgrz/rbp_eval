@@ -12,6 +12,8 @@ AC_PROG_CC
 AC_PROG_CXX
 AC_PROG_RANLIB
 
+AC_SUBST([AM_CXXFLAGS], [-std=c++11])
+
 # Checks for libraries.
 AC_CHECK_LIB([m], [pow])
 AC_CHECK_LIB([ssl], [MD5_Init])
