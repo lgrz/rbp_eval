@@ -13,8 +13,10 @@ AM_CPPFLAGS=-I$(srcdir)/.. -I.
 librbp___a_SOURCES=qidspec.cpp pool.cpp qrels.cpp rbp.cpp jlog.cpp \
 		   mmath.cpp rungroups.cpp runlist.cpp run.cpp \
 		   syslist.cpp \
-		   $(wildcard *.h)
-
+		   dococcur.h hash.h jlog.h jpick.h judgment.h kendpenalty.h \
+		   mmath.h parselist.h pool.h qidspec.h qrels.h rbo.h rbp.h \
+		   rungroups.h run.h runlist.h syslist.h sysrank_topic.h \
+		   sysrank_topic_hash.h wgtint.h
 
 # XXX Doesn't compile
 # sysrank_topic_hash.cpp 

@@ -23,4 +23,6 @@ dblheap_CPPFLAGS=-DDBLHEAP_MAIN
 
 librbp_a_SOURCES=depth.c error.c persist.c qdocs.c qrels.c rbp.c \
     res.c run.c strhash.c util.c strid.c dblheap.c futil.c args.c \
-    $(wildcard *.h)
+    args.h array.h dblheap.h depth.h error.h futil.h output.h \
+	persist.h qdocs.h qrels.h rbp.h res.h run.h strhash.h \
+    strid.h util.h

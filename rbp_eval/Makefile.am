@@ -14,7 +14,13 @@ rbp_tester_SOURCES=tester.c opt.c help.c
 opt_CPPFLAGS=-DOPT_MAIN $(AM_CPPFLAGS)
 opt_SOURCES=opt.c help.c
 
-EXTRA_DIST=rbp_eval.1.in $(wildcard test/data/*.spec) \
-	   $(wildcard test/data/*.qrels) \
-	   test/data/README.txt $(wildcard test/data/*.run)
-
+EXTRA_DIST=rbp_eval.1.in \
+           test/data/1.spec test/data/2.spec test/data/3.spec \
+           test/data/4.spec test/data/5.spec test/data/6.spec \
+           test/data/7.spec test/data/8.spec test/data/9.spec \
+		   test/data/10.spec test/data/11.spec \
+           test/data/basic.qrels test/data/frac.qrels test/data/mult.qrels \
+           test/data/manyties.run test/data/noties-jumbled.run \
+           test/data/noties.run test/data/ties-jumbled.run \
+           test/data/ties.run \
+		   test/data/README.txt
